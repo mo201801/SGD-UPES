@@ -18,7 +18,14 @@
 ### Preparando  Entonrono
 - sudo apt update 
 - sudo apt upgrade -y
+- sudo apt install docker.io
+- sudo docker pull rethinkdb
+- sudo docker run -d --name rt --network host rethinkdb
 - sudo apt install python3-pip
-- virtualvenv --version
+- sudo apt install python3-venv
+- mkdir -p proyecto; cd proyecto ; python3 -m venv app
+-  cd app/ ; source bin/activate
+-  pip install Flask rethinkdb
+  
 
 
